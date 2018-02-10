@@ -1,17 +1,12 @@
-* {
-    font-family: 'Open sans, sans-seriff' !important;
-
+body {
+    font-family: 'Open Sans', sans-serif;
+    overflow-x: hidden;
+    background-color: #fafafa;
 }
 
 a {
-    text-decoration: none !important;
-    color: #fafafa !important;
-}
-
-body {
-    overflow-x: hidden;
-    background-color: #fafafa;
-
+    text-decoration: none;
+    color: #fafafa;
 }
 
 

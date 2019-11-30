@@ -1,14 +1,7 @@
 <template lang="pug">
   div.app
-    div.actionbar
-      Topbar(
-        @hamburger-clicked="toggleNavbar"
-      )
-    div.navbar
-      Navbar(
-        :expanded="navbarExpanded"
-        @state-changed="setNavbarState"
-      )
+    Topbar
+    Navbar
     router-view
 </template>
 
@@ -21,24 +14,13 @@ export default {
     Navbar,
     Topbar
   },
-  data: () => ({
-    navbarExpanded: false
-  }),
   methods: {
-    toggleNavbar() {
-      this.navbarExpanded = !this.navbarExpanded
-    },
-    setNavbarState(state) {
-      this.navbarExpanded = state
-    }
+
   }
 }
 </script>
 
 <style lang="sass">
   div.app
-    height: 100%
-
-  div.navbar
     height: 100%
 </style>

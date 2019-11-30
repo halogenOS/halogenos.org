@@ -1,24 +1,21 @@
 <template lang="pug">
-    v-navigation-drawer(
-        v-model="isExpanded"
-        app
-        fixed
-        @input="stateChanged"
-    )
-        v-list
-            v-list-item(
-                v-for="item in items"
-                :key="item.title"
-                link
-            )
-                v-list-item-content
-                    v-list-item-title {{ item.title }}
+    nav
+        NavbarElement(
+            v-for="item in navigationItems"
+            :key="item.title"
+            :title="item.title"
+        )
 </template>
 
 <script>
+import NavbarElement from '@/components/NavbarElement'
+
 export default {
+    components: {
+        NavbarElement
+    },
     data: () => ({
-        items: [
+        navigationItems: [
             {
                 title: "test"
             },
@@ -26,22 +23,13 @@ export default {
                 title: "test2"
             }
         ]
-    }),
-    computed: {
-        isExpanded: {
-            get() {
-                return this.expanded
-            },
-            set() {}
-        }
-    },
-    methods: {
-        stateChanged(value) {
-            this.$emit('state-changed', value)
-        }
-    },
-    props: {
-        expanded: Boolean
-    }
+    })
 }
 </script>
+
+<style lang="sass" scoped>
+    nav
+        display: flex
+        flex-direction: row
+        gap: 16px
+</style>

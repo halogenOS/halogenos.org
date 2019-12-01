@@ -31,5 +31,4 @@ export default {
     nav
         display: flex
         flex-direction: row
-        gap: 16px
 </style>

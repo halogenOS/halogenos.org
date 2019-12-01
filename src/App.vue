@@ -1,26 +1,26 @@
 <template lang="pug">
-  div.app
-    Topbar
-    Navbar
-    router-view
+    div.app
+        Logo
+        Navbar
+        router-view
 </template>
 
 <script>
-import Topbar from '@/components/Topbar'
+import Logo from '@/components/Logo'
 import Navbar from '@/components/Navbar'
 
 export default {
-  components: {
-    Navbar,
-    Topbar
-  },
-  methods: {
+    components: {
+        Logo,
+        Navbar
+    },
+    methods: {
 
-  }
+    }
 }
 </script>
 
 <style lang="sass">
-  div.app
-    height: 100%
+    div.app
+        height: 100%
 </style>

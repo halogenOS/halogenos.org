@@ -1,9 +1,9 @@
 @import include/design
-    
-:root
-    --theme-background: $primary-background-light
-    
+
+html
+    --theme-background: #{$theme-background-light}
+
     @media (prefers-color-scheme: dark)
         &
-            --theme-background: $primary-background-dark
-    
+            --theme-background: #{$theme-background-dark}
+

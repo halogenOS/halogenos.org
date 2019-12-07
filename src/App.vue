@@ -4,16 +4,19 @@
             Logo
             Navbar
         router-view
+        Footer
 </template>
 
 <script>
 import Logo from '@/components/Logo'
 import Navbar from '@/components/Navbar'
+import Footer from '@/components/Footer'
 
 export default {
     components: {
         Logo,
-        Navbar
+        Navbar,
+        Footer
     },
     methods: {
 
@@ -24,6 +27,11 @@ export default {
 <style lang="sass" scoped>
     div.app
         height: 100%
+        display: flex
+        flex-direction: column
+
+        > div:nth-child(2)
+            flex: 1
 
     header
         display: grid

@@ -1,7 +1,8 @@
 <template lang="pug">
     div.app
-        Logo
-        Navbar
+        header
+            Logo
+            Navbar
         router-view
 </template>
 
@@ -20,7 +21,18 @@ export default {
 }
 </script>
 
-<style lang="sass">
+<style lang="sass" scoped>
     div.app
         height: 100%
+
+    header
+        display: grid
+        grid-template-columns: 1fr 1fr
+        grid-template-rows: 1fr
+        align-items: center
+        height: 86px
+        margin: 0 48px
+        user-select: none
+        cursor: default
+
 </style>

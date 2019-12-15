@@ -30,10 +30,13 @@ export default {
         > div.title
             font-family: $primary-font-family
             font-size: 1.6em
+            color: $theme-foreground-dark
 
         > div.subtitle
             font-family: $text-font-family
             font-weight: 300
-            font-size: 1.2em
+            font-size: 1.18em
+            -webkit-text-stroke: 0.28px
+            color: $theme-foreground-dark
 
 </style>

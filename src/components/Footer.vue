@@ -5,7 +5,9 @@
         div
         div
         div
-            span Privacy Policy
+            a(
+                href="/privacy"
+            ) Privacy Policy
 </template>
 
 <script>
@@ -31,4 +33,10 @@ export default {
         > div
             display: flex
             flex-direction: column
+
+        a
+            all: unset
+            color: inherit
+            cursor: pointer
+
 </style>

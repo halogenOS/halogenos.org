@@ -23,7 +23,7 @@ export default {
             },
             {
                 title: "Sources",
-                route: "/sources"
+                route: "https://git.halogenos.org/halogenOS"
             },
             {
                 title: "Team",

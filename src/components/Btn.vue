@@ -18,11 +18,12 @@
         padding: 0 $height / 2
         cursor: pointer
         box-sizing: border-box
-        transition: background-color 120ms $default-transition-curve
+        transition: background-color 120ms $default-transition-curve, color 120ms $default-transition-curve
 
         &[rounded]
             border-radius: $height / 2
 
         &:hover
-            background-color: adjust-color($theme-background-light, $alpha: -0.16)
+            background-color: adjust-color($theme-background-light, $alpha: -0.08, $lightness: -2)
+            color: adjust-color($theme-accent-light, $lightness: -4)
 </style>

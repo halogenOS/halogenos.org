@@ -15,4 +15,7 @@ div.page
     flex-direction: column
     margin: 48px
     box-sizing: border-box
+
+    &[scrollable]
+        overflow-y: auto
 </style>

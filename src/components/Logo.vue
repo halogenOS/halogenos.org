@@ -24,9 +24,10 @@
             letter-spacing: 0.08em
 
     span
-        font-family: 'Open Sans', sans-serif
+        font-family: 'Roboto', sans-serif
         font-size: 1.48em
-        font-weight: 300
+        font-weight: 200
+        -webkit-text-stroke: 0.16px
         color: var(--theme-foreground)
 
         &.os

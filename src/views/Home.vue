@@ -5,7 +5,11 @@
             subtitle="Simple, smooth and performant"
         )
             div.btn-cont
-                Btn.to-download(rounded) Get it now
+                Btn.to-download(
+                    rounded
+                    @click.native="$router.push('/download')"
+                )
+                    | Get it now
 </template>
 
 <script>

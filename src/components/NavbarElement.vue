@@ -1,6 +1,6 @@
 <template lang="pug">
     div.title-text(
-        @click="$router.push(route)"
+        @click="pushRoute(route)"
     ) {{ title }}
 </template>
 
@@ -9,6 +9,15 @@ export default {
     props: {
         title: String,
         route: String
+    },
+    methods: {
+        pushRoute(route) {
+            if (/^https?:\/\/.*$/i.test(route)) {
+                document.location.href = route
+            } else {
+                this.$router.push(route)
+            }
+        }
     }
 }
 </script>

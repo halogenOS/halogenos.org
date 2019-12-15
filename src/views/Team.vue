@@ -21,7 +21,7 @@ export default {
     data: () => ({
         members: [
             {
-                name: "Simao Gomes Viana"
+                name: "Simão Gomes Viana"
             },
             {
                 name: "Neil"
@@ -33,7 +33,7 @@ export default {
                 name: "Kees"
             },
             {
-                name: "Razz"
+                name: "Ștefan Pruneanu"
             }
         ]
     })

@@ -4,7 +4,6 @@
             span The halogenOS Open Source Project
         div
         div
-        div
             a(
                 href="/privacy"
             ) Privacy Policy
@@ -21,18 +20,24 @@ export default {
 
     footer
         display: grid
-        grid-template-columns: 1fr 1fr 1fr 1fr
+        grid-template-columns: 1fr 1fr 1fr
         grid-template-rows: 1fr
         justify-items: center
         font-family: $text-font-family
         font-size: 0.8em
         color: var(--theme-foreground-60)
         min-height: 5vh
-        margin: 16px 48px
+        margin: 16px 5vw
 
         > div
             display: flex
             flex-direction: column
+
+            &:first-child
+                justify-self: flex-start
+
+            &:last-child
+                justify-self: flex-end
 
         a
             all: unset

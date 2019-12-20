@@ -39,7 +39,7 @@ export default {
         grid-template-rows: 1fr
         align-items: center
         height: 86px
-        margin: 0 48px
+        margin: 0 5vw
         user-select: none
         cursor: default
 

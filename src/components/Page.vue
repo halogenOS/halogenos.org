@@ -13,7 +13,7 @@ export default {
 div.page
     display: flex
     flex-direction: column
-    margin: 48px
+    margin: 5vh 5vw
     box-sizing: border-box
 
     &[scrollable]

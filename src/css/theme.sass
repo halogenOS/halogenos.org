@@ -1,22 +1,13 @@
 @import include/design
 
 html
-    --theme-background: #{$theme-background-light}
-    --theme-foreground: #{$theme-foreground-light}
-    --theme-foreground-80: #{$theme-foreground-light-80}
-    --theme-foreground-60: #{$theme-foreground-light-60}
-    --theme-foreground-40: #{$theme-foreground-light-40}
-    --theme-foreground-20: #{$theme-foreground-light-20}
-    --material-blue: #{$material-blue-light}
-
-    @media (prefers-color-scheme: dark)
-        --theme-background: #{$theme-background-dark}
-        --theme-foreground: #{$theme-foreground-dark}
-        --theme-foreground-80: #{$theme-foreground-dark-80}
-        --theme-foreground-60: #{$theme-foreground-dark-60}
-        --theme-foreground-40: #{$theme-foreground-dark-40}
-        --theme-foreground-20: #{$theme-foreground-dark-20}
-        --material-blue: #{$material-blue-dark}
+    --theme-background: #{$theme-background-dark}
+    --theme-foreground: #{$theme-foreground-dark}
+    --theme-foreground-80: #{$theme-foreground-dark-80}
+    --theme-foreground-60: #{$theme-foreground-dark-60}
+    --theme-foreground-40: #{$theme-foreground-dark-40}
+    --theme-foreground-20: #{$theme-foreground-dark-20}
+    --material-blue: #{$material-blue-dark}
 
     color: var(--theme-foreground)
     background-color: var(--theme-background)

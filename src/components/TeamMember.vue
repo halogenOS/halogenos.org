@@ -1,5 +1,5 @@
 <template lang="pug">
-    div
+    div.team-member
         | {{ name }}
 </template>
 
@@ -12,6 +12,7 @@ export default {
 }
 </script>
 
-<style>
-
+<style lang="sass">
+.team-member
+	margin: 16px
 </style>

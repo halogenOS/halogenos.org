@@ -1,7 +1,7 @@
 <template lang="pug">
     footer
         div
-            span The halogenOS Open Source Project
+            span The halogenOS Project
         div
         div
             a(

@@ -28,7 +28,11 @@ export default {
             {
                 title: "Team",
                 route: "/team"
-            }
+            },
+            {
+                title: "Right to Repair",
+                route: "https://www.gofundme.com/f/lets-get-right-to-repair-passed"
+            },
         ]
     })
 }

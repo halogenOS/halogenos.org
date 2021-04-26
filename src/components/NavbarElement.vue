@@ -29,7 +29,7 @@ export default {
 .title-text
     font-family: $primary-font-family
     color: var(--theme-foreground-80)
-    margin-left: 24px
+    margin-left: 20px
     cursor: pointer
 
     &:hover

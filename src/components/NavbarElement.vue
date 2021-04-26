@@ -30,6 +30,7 @@ export default {
     font-family: $primary-font-family
     color: var(--theme-foreground-80)
     margin-left: 20px
+    font-size: 15px
     cursor: pointer
 
     &:hover

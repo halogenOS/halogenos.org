@@ -49,3 +49,7 @@
   flex-wrap: wrap;
   justify-content: center;
 }
+
+.blur{
+  backdrop-filter: blur(10px);
+}

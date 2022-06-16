@@ -9,12 +9,12 @@
   }
 
 .card-header {
-    color: #000;
+    color: var(--color-fg);
     text-align: center;
     font-size: 12px;
     font-weight: 600;
     border-bottom: 1px solid #464646;
-    background-color: #d6d6d6;
+    background-color: #464646;
     padding: 5px 10px;
   }
 
@@ -33,7 +33,7 @@
   }
 
   .main-description {
-    color: #000;
+    color: var(--color-fg);
     font-size: 12px;
     text-align: center;
     vertical-align: bottom;

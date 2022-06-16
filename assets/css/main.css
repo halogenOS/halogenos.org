@@ -1855,23 +1855,23 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 blockquote {
-	border-left-color: #e6e6e6;
+	border-left-color: var(--color-body-accent);
 }
 
 code {
 	background: rgba(144, 144, 144, 0.075);
-	border-color: #e6e6e6;
+	border-color: var(--color-body-accent);
 }
 
 hr {
-	border-bottom-color: #e6e6e6;
+	border-bottom-color: var(--color-body-accent);
 }
 
 /* Box */
 
 .box {
 	border-radius: 6px;
-	border: solid 1px #e6e6e6;
+	border: solid 1px var(--color-body-accent);
 	margin-bottom: 2em;
 	padding: 1.5em;
 }
@@ -1994,7 +1994,7 @@ button,
 .button {
 	background-color: transparent;
 	color: #828282 !important;
-	box-shadow: inset 0 0 0 2px #e6e6e6;
+	box-shadow: inset 0 0 0 2px var(--color-body-accent);
 }
 
 	input[type="submit"]:hover,
@@ -2220,7 +2220,7 @@ select,
 textarea {
 	color: inherit;
 	background-color: rgba(144, 144, 144, 0.075);
-	border-color: #e6e6e6;
+	border-color: var(--color-body-accent);
 }
 
 	input[type="text"]:focus,
@@ -2233,7 +2233,7 @@ textarea {
 	}
 
 .select-wrapper:before {
-	color: #e6e6e6;
+	color: var(--color-body-accent);
 }
 
 input[type="checkbox"] + label,
@@ -2244,7 +2244,7 @@ input[type="radio"] + label {
 	input[type="checkbox"] + label:before,
 	input[type="radio"] + label:before {
 		background-color: rgba(144, 144, 144, 0.075);
-		border-color: #e6e6e6;
+		border-color: var(--color-body-accent);
 	}
 
 input[type="checkbox"]:checked + label:before,
@@ -2424,7 +2424,7 @@ input[type="radio"]:focus + label:before {
 		}
 
 .image {
-	box-shadow: 0 0 0 4px #ffffff, 0 0 0 5px #e6e6e6;
+	box-shadow: 0 0 0 4px #ffffff, 0 0 0 5px var(--color-body-accent);
 }
 
 	.image.phone {
@@ -2432,15 +2432,15 @@ input[type="radio"]:focus + label:before {
 	}
 
 		.image.phone .inner, .image.phone:before, .image.phone:after {
-			border-color: #e6e6e6;
+			border-color: var(--color-body-accent);
 		}
 
 		.image.phone .inner:before {
-			background: #e6e6e6;
+			background: var(--color-body-accent);
 		}
 
 		.image.phone .inner:after {
-			border-color: #e6e6e6;
+			border-color: var(--color-body-accent);
 		}
 
 /* List */
@@ -2690,7 +2690,7 @@ dl {
 	}
 
 ul.alt > li {
-	border-top-color: #e6e6e6;
+	border-top-color: var(--color-body-accent);
 }
 
 /* Section/Article */
@@ -2739,7 +2739,7 @@ header.major {
 
 	header.major:after {
 		content: '';
-		border-bottom: solid 2px #e6e6e6;
+		border-bottom: solid 2px var(--color-body-accent);
 		display: block;
 		width: 4em;
 		margin: 2em auto 0 auto;
@@ -2909,7 +2909,7 @@ table {
 		}
 
 table tbody tr {
-	border-color: #e6e6e6;
+	border-color: var(--color-body-accent);
 }
 
 	table tbody tr:nth-child(2n + 1) {
@@ -2921,23 +2921,23 @@ table th {
 }
 
 table thead {
-	border-bottom-color: #e6e6e6;
+	border-bottom-color: var(--color-body-accent);
 }
 
 table tfoot {
-	border-top-color: #e6e6e6;
+	border-top-color: var(--color-body-accent);
 }
 
 table.alt tbody tr td {
-	border-color: #e6e6e6;
+	border-color: var(--color-body-accent);
 }
 
 /* Wrapper */
 
 .wrapper {
 	padding: 4.5em 0 2.5em 0 ;
-	background-color: #ffffff;
-	border-bottom: solid 2px #eeeeee;
+	background-color: var(--color-body-bg);
+	border-bottom: solid 2px var(--color-body-accent);
 }
 
 	.wrapper > .inner {
@@ -2947,7 +2947,7 @@ table.alt tbody tr td {
 	}
 
 		.wrapper > .inner.alt > * {
-			border-top: solid 2px #eeeeee;
+			border-top: solid 2px var(--color-body-accent);
 			margin-bottom: 0;
 			margin-top: 3em;
 			padding-top: 3em;
@@ -2996,7 +2996,7 @@ table.alt tbody tr td {
 			.wrapper.style1 button.special,
 			.wrapper.style1 .button.special {
 				box-shadow: none;
-				background-color: #ffffff;
+				background-color: var(--color-body-bg);
 				color: #1E88E5 !important;
 			}
 
@@ -3040,7 +3040,7 @@ table.alt tbody tr td {
 
 		.wrapper.style1 input[type="checkbox"]:checked + label:before,
 		.wrapper.style1 input[type="radio"]:checked + label:before {
-			background-color: #ffffff;
+			background-color: var(--color-body-bg);
 			border-color: #ffffff;
 			color: #00B4E7;
 		}
@@ -3155,7 +3155,7 @@ table.alt tbody tr td {
 		}
 
 	.wrapper.style2 {
-		background-color: #fbfbfb;
+		background-color: var(--color-body-bg);
 		color: #999999;
 	}
 
@@ -3166,7 +3166,7 @@ table.alt tbody tr td {
 		.wrapper.style2 .button {
 			background-color: transparent;
 			color: #828282 !important;
-			box-shadow: inset 0 0 0 2px #e6e6e6;
+			box-shadow: inset 0 0 0 2px var(--color-body-accent);
 		}
 
 			.wrapper.style2 input[type="submit"]:hover,
@@ -3222,7 +3222,7 @@ table.alt tbody tr td {
 		.wrapper.style2 textarea {
 			color: inherit;
 			background-color: rgba(144, 144, 144, 0.075);
-			border-color: #e6e6e6;
+			border-color: var(--color-body-accent);
 		}
 
 			.wrapper.style2 input[type="text"]:focus,
@@ -3235,7 +3235,7 @@ table.alt tbody tr td {
 			}
 
 		.wrapper.style2 .select-wrapper:before {
-			color: #e6e6e6;
+			color: var(--color-body-accent);
 		}
 
 		.wrapper.style2 input[type="checkbox"] + label,
@@ -3246,7 +3246,7 @@ table.alt tbody tr td {
 			.wrapper.style2 input[type="checkbox"] + label:before,
 			.wrapper.style2 input[type="radio"] + label:before {
 				background-color: rgba(144, 144, 144, 0.075);
-				border-color: #e6e6e6;
+				border-color: var(--color-body-accent);
 			}
 
 		.wrapper.style2 input[type="checkbox"]:checked + label:before,
@@ -3287,7 +3287,7 @@ table.alt tbody tr td {
 		}
 
 		.wrapper.style2 .image {
-			box-shadow: 0 0 0 4px #fbfbfb, 0 0 0 5px #e6e6e6;
+			box-shadow: 0 0 0 4px #fbfbfb, 0 0 0 5px var(--color-body-accent);
 		}
 
 			.wrapper.style2 .image.phone {
@@ -3295,23 +3295,23 @@ table.alt tbody tr td {
 			}
 
 				.wrapper.style2 .image.phone .inner, .wrapper.style2 .image.phone:before, .wrapper.style2 .image.phone:after {
-					border-color: #e6e6e6;
+					border-color: var(--color-body-accent);
 				}
 
 				.wrapper.style2 .image.phone .inner:before {
-					background: #e6e6e6;
+					background: var(--color-body-accent);
 				}
 
 				.wrapper.style2 .image.phone .inner:after {
-					border-color: #e6e6e6;
+					border-color: var(--color-body-accent);
 				}
 
 		.wrapper.style2 ul.alt > li {
-			border-top-color: #e6e6e6;
+			border-top-color: var(--color-body-accent);
 		}
 
 		.wrapper.style2 table tbody tr {
-			border-color: #e6e6e6;
+			border-color: var(--color-body-accent);
 		}
 
 			.wrapper.style2 table tbody tr:nth-child(2n + 1) {
@@ -3323,15 +3323,15 @@ table.alt tbody tr td {
 		}
 
 		.wrapper.style2 table thead {
-			border-bottom-color: #e6e6e6;
+			border-bottom-color: var(--color-body-accent);
 		}
 
 		.wrapper.style2 table tfoot {
-			border-top-color: #e6e6e6;
+			border-top-color: var(--color-body-accent);
 		}
 
 		.wrapper.style2 table.alt tbody tr td {
-			border-color: #e6e6e6;
+			border-color: var(--color-body-accent);
 		}
 
 		.wrapper.style2 input, .wrapper.style2 select, .wrapper.style2 textarea {
@@ -3356,20 +3356,20 @@ table.alt tbody tr td {
 		}
 
 		.wrapper.style2 blockquote {
-			border-left-color: #e6e6e6;
+			border-left-color: var(--color-body-accent);
 		}
 
 		.wrapper.style2 code {
 			background: rgba(144, 144, 144, 0.075);
-			border-color: #e6e6e6;
+			border-color: var(--color-body-accent);
 		}
 
 		.wrapper.style2 hr {
-			border-bottom-color: #e6e6e6;
+			border-bottom-color: var(--color-body-accent);
 		}
 
 	.wrapper.style3 {
-		background-color: #f7f7f7;
+		background-color: var(--color-body-bg);
 		color: #999999;
 	}
 
@@ -3684,7 +3684,7 @@ table.alt tbody tr td {
 		#header button.special,
 		#header .button.special {
 			box-shadow: none;
-			background-color: #ffffff;
+			background-color: var(--color-body-bg);
 			color: #1E88E5 !important;
 		}
 
@@ -3728,7 +3728,7 @@ table.alt tbody tr td {
 
 	#header input[type="checkbox"]:checked + label:before,
 	#header input[type="radio"]:checked + label:before {
-		background-color: #ffffff;
+		background-color: var(--color-body-bg);
 		border-color: #ffffff;
 		color: #00B4E7;
 	}
@@ -4079,7 +4079,7 @@ table.alt tbody tr td {
 /* Footer */
 
 #footer {
-	background-color: #f7f7f7;
+	background-color: var(--color-body-bg);
 	color: #999999;
 	padding: 4.5em 0 2.5em 0 ;
 	color: #b0b0b0;
@@ -4241,10 +4241,12 @@ ul.actions li > * {
 :root {
 	--color-fg: #1c0e00;
 	--color-body-bg: #f1f1f1;
+	--color-body-accent: #e6e6e6;
 }
 @media (prefers-color-scheme: dark) {
 	:root {
 		--color-fg: #fefff5;
 		--color-body-bg: #0a0e13;
+		--color-body-accent: #141414;
 	}
 }

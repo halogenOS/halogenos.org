@@ -4236,3 +4236,15 @@ ul.actions li > * {
 #gerrit-icon {
 	display: none;
 }
+
+
+:root {
+	--color-fg: #1c0e00;
+	--color-body-bg: #f1f1f1;
+}
+@media (prefers-color-scheme: dark) {
+	:root {
+		--color-fg: #fefff5;
+		--color-body-bg: #0a0e13;
+	}
+}

@@ -41,6 +41,10 @@
 
 .marginbox{
   margin: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .rowitem{

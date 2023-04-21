@@ -32,6 +32,11 @@
     <!-- ToTop -->
     <script src="assets/js/totop/main.js"></script>
     <script src="assets/js/totop/modernizr.js"></script>
+    <script type="text/javascript">
+        function openDeviceInfo(deviceName) {
+            window.location.href = "deviceinfo.html?name=" + deviceName;
+        }
+    </script>
 </head>
 
 <body id="top">
@@ -78,7 +83,7 @@
         <ul class="rowitem">
             <div class="card">
                 <div class="card-header">guacamole</div>
-                <a href="https://github.com/halogenOS/builds/releases?q=guacamole&expanded=true" target="_blank">
+                <a onclick="openDeviceInfo('Oneplus 7Pro')" target="_blank">
                     <div class="card-main">
                         <div class="inner"><img src="images/Guacamole.png" height="450" alt="" /></div>
                         <div class="main-description">Oneplus 7 Pro</div>
@@ -87,7 +92,7 @@
             </div>
             <div class="card">
                 <div class="card-header">cheeseburger</div>
-                <a href="https://github.com/halogenOS/builds/releases?q=cheeseburger&expanded=true" target="_blank">
+                <a onclick="openDeviceInfo('Oneplus 5')" target="_blank">
                     <div class="card-main">
                         <div class="inner"><img src="images/cheeseburger.png" height="450" alt="" /></div>
                         <div class="main-description">Oneplus 5</div>
@@ -117,7 +122,7 @@
         <ul class="rowitem">
             <div class="card">
                 <div class="card-header">a52q</div>
-                <a href="https://github.com/halogenOS/builds/releases?q=a52q&expanded=true" target="_blank">
+                <a onclick="openDeviceInfo('Samsung Galaxy A52 4G')" target="_blank">
                     <div class="card-main">
                         <div class="inner"><img src="images/a52q.png" height="450" alt="" /></div>
                         <div class="main-description">Samsung Galaxy A52 4G</div>

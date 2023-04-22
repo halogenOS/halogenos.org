@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="assets/css/main.css?v=6" />
     <link rel="stylesheet" href="assets/css/menu.css?v=6" />
     <link rel="stylesheet" href="assets/css/devices.css?v=6" />
+    <link rel="stylesheet" href="assets/css/deviceinformation.css?v=6" />
     <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
     <!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,400,500" rel="stylesheet">
@@ -77,6 +78,418 @@
             </ul>
         </div>
     </header>
+
+    <section id="information" class="wrapper style2 special">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="device-image.jpg" id="deviceImage" alt="Device Image" width="100%">
+                    <br>
+                    <br>
+                    <a href="https://download-link.com" style="color: black;" class="btn-download">Download</a>
+                    <script type="text/javascript">
+                        const devices = {
+                            guacamole:{
+                                name: "OnePlus 7 Pro",
+                                maintainer: "Noah Anleitner (N0m4n904)",
+                                cameraType: "triple",
+                                image: "images/Guacamole.png",
+                                launch: "2019",
+                                display:{
+                                    type: "Fluid AMOLED, 90Hz, HDR10+",
+                                    size: "6.67\"",
+                                    resolution: "1440 x 3120 pixels"
+                                },
+                                platform:{
+                                    chipset: "Qualcomm SM8150 Snapdragon 855",
+                                    cpu: "Octa-core (1x2.84 GHz Kryo 485 & 3x2.42 GHz Kryo 485 & 4x1.78 GHz Kryo 485)",
+                                    gpu: "Adreno 640"
+                                },
+                                memory:{
+                                    cardSlot: "No",
+                                    internal: "128GB 6GB RAM, 256GB 8GB RAM, 256GB 12GB RAM"
+                                },
+                                mainCamera:{
+                                    triple:{
+                                        1: "48 MP, f/1.6, (wide), 1/2.0\", 0.8µm, PDAF, Laser AF, OIS",
+                                        2: "8 MP, f/2.4, 78mm (telephoto), 3x optical zoom, PDAF, OIS",
+                                        3: "16 MP, f/2.2, 17mm (ultrawide), AF"
+                                    },
+                                    features: "HDR, panorama, dual-LED flash",
+                                    video: "4K@30/60fps, 1080p@30/60/240fps, 720p@480fps, Auto HDR, gyro-EIS, no video rec. with ultrawide camera"
+                                },
+                                selfieCamera:{
+                                    single: "Motorized pop-up 16 MP, f/2.0, 25mm (wide), 1/3.06\", 1.0µm",
+                                    features: "Auto-HDR",
+                                    video: "1080p@30fps (gyro-EIS)"
+                                },
+                                sound:{
+                                    loudspeaker: "Yes, with stereo speakers",
+                                    headphoneJack: "No",
+                                },
+                                comms:{
+                                    wlan: "Wi-Fi 802.11 a/b/g/n/ac, dual-band, Wi-Fi Direct, DLNA",
+                                    bluetooth: "5.0, A2DP, LE, aptX HD",
+                                    positioning: "GPS (L1+L5), GLONASS (G1), BDS (B1), GALILEO (E1+E5a)",
+                                    nfc: "Yes",
+                                    radio: "No",
+                                    usb: "USB Type-C 3.1, OTG"
+                                },
+                                features:{
+                                    sensors: "Fingerprint (under display, optical), accelerometer, gyro, compass, virtual proximity sensing"
+                                },
+                                battery:{
+                                    type: "Li-Po 4000 mAh, non-removable",
+                                    charging: "30W wired"
+                                }
+                            },
+                            cheeseburger:{
+                                name: "OnePlus 5",
+                                maintainer: "Simao Gomes Viana (superboringdev)",
+                                cameraType: "dual",
+                                image: "images/cheeseburger.png",
+                                launch: "2017",
+                                display:{
+                                    type: "Optic AMOLED",
+                                    size: "5.5\"",
+                                    resolution: "1080 x 1920 pixels"
+                                },
+                                platform:{
+                                    chipset: "Qualcomm MSM8998 Snapdragon 835",
+                                    cpu: "Octa-core (4 x 2.45 GHz Kryo & 4 x 1.9 GHz Kryo)",
+                                    gpu: "Adreno 540"
+                                },
+                                memory:{
+                                    cardSlot: "No",
+                                    internal: "64GB 6GB RAM, 128GB 8GB RAM"
+                                },
+                                mainCamera:{
+                                    dual:{
+                                        1: "16 MP, f/1.7, 24mm (wide), 1/2.8\", 1.12µm, PDAF",
+                                        2: "20 MP, f/2.6, 36mm (standard), 1/2.8\", 1.0µm, 1.6x optical zoom, AF"
+                                    },
+                                    features: "HDR, panorama, dual-LED flash",
+                                    video: "4K@30fps, 1080p@30/60fps, 720p@30/120/480fps, Auto-HDR"
+                                },
+                                selfieCamera:{
+                                    single: "16MP, f/2.0, 20mm (wide), 1/3.06\", 1.0µm",
+                                    features: "Auto-HDR",
+                                    video: "1080p (gyro-EIS)"
+                                },
+                                sound:{
+                                    loudspeaker: "Yes",
+                                    headphoneJack: "Yes",
+                                },
+                                comms:{
+                                    wlan: "Wi-Fi 802.11 a/b/g/n/ac, Wi-Fi Direct, DLNA",
+                                    bluetooth: "5.0, A2DP, LE, aptX HD",
+                                    positioning: "GPS, GLONASS, BDS, GALILEO",
+                                    nfc: "Yes",
+                                    radio: "No",
+                                    usb: "USB Type-C 2.0"
+                                },
+                                features:{
+                                    sensors: "Fingerprint (front-mounted), accelerometer, gyro, proximity, compass"
+                                },
+                                battery:{
+                                    type: "Li-Po 3300 mAh, non-removable",
+                                    charging: "20W wired"
+                                }
+                            },
+                            a52q:{
+                                name: "Samsung Galaxy A52 4G",
+                                maintainer: "Noah Anleitner (N0m4n904)",
+                                cameraType: "quad",
+                                image: "images/a52q.png",
+                                launch: "2021",
+                                display:{
+                                    type: "Super AMOLED, 90Hz, 800 nits (HBM)",
+                                    size: "6.5\"",
+                                    resolution: "1080 x 2400 pixels"
+                                },
+                                platform:{
+                                    chipset: "Qualcomm SM7125 Snapdragon 720G",
+                                    cpu: "Octa-core (2x2.3 GHz Kryo 465 Gold & 6x1.8 GHz Kryo 465 Silver)",
+                                    gpu: "Adreno 618"
+                                },
+                                memory:{
+                                    cardSlot: "microSDXC (uses shared SIM slot)",
+                                    internal: "128GB 4GB RAM, 128GB 6GB RAM, 128GB 8GB RAM, 256GB 6GB RAM, 256GB 8GB RAM"
+                                },
+                                mainCamera:{
+                                    quad:{
+                                        1: "64 MP, f/1.8, 26mm (wide), 1/1.7\", 0.8µm, PDAF, OIS",
+                                        2: "12 MP, f/2.2, 123˚ (ultrawide), 1.12µm",
+                                        3: "5 MP, f/2.4, (macro)",
+                                        4: "5 MP, f/2.4, (depth)"
+                                    },
+                                    features: "LED flash, panorama, HDR",
+                                    video: "4K@30fps, 1080p@30/60fps; gyro-EIS"
+                                },
+                                selfieCamera:{
+                                    single: "32 MP, f/2.2, 26mm (wide), 1/2.8\", 0.8µm",
+                                    features: "HDR",
+                                    video: "4K@30fps, 1080p@30fps"
+                                },
+                                sound:{
+                                    loudspeaker: "Yes, with stereo speakers",
+                                    headphoneJack: "Yes",
+                                },
+                                comms:{
+                                    wlan: "Wi-Fi 802.11 a/b/g/n/ac, dual-band, Wi-Fi Direct",
+                                    bluetooth: "5.0, A2DP, LE",
+                                    positioning: "GPS, GLONASS, GALILEO, BDS",
+                                    nfc: "Yes (market/region dependent)",
+                                    radio: "FM radio",
+                                    usb: "USB Type-C 2.0, OTG"
+                                },
+                                features:{
+                                    sensors: "Fingerprint (under display, optical), accelerometer, gyro, compass, virtual proximity sensing"
+                                },
+                                battery:{
+                                    type: "Li-Po 4500 mAh, non-removable",
+                                    charging: "25W wired"
+                                }
+                            }
+                        }
+                        document.getElementById('deviceImage').src = devices[document.getElementById('deviceName').innerHTML].image
+                    </script>
+                </div>
+                <div class="col-md-6" style="margin-top: 60px;">
+                    <table style="background-color: transparent;">
+                        <tr style="background-color: transparent;">
+                            <th>Name:</th>
+                            <td id="deviceNameText"></td>
+                        </tr>
+                        <tr style="background-color: transparent;">
+                            <th>Maintainer:</th>
+                            <td id="deviceMaintainer"></td>
+                        </tr>
+                        <tr style="background-color: transparent;">
+                            <th>Launch:</th>
+                            <td id="deviceLaunch"></td>
+                        </tr>
+                        <tr style="background-color: transparent;">
+                            <th>Display:</th>
+                            <td>
+                                <table style="background-color: transparent;">
+                                    <tr style="background-color: transparent;">
+                                        <th>Type:</th>
+                                        <td id="deviceDisplayType"></td>
+                                    </tr>
+                                    <tr style="background-color: transparent;">
+                                        <th>Size:</th>
+                                        <td id="deviceDisplaySize"></td>
+                                    </tr>
+                                    <tr style="background-color: transparent;">
+                                        <th>Resolution:</th>
+                                        <td id="deviceDisplayResolution"></td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr style="background-color: transparent;">
+                            <th>Platform:</th>
+                            <td>
+                                <table style="background-color: transparent;">
+                                    <tr style="background-color: transparent;">
+                                        <th>Chipset:</th>
+                                        <td id="devicePlatformChipset"></td>
+                                    </tr>
+                                    <tr style="background-color: transparent;">
+                                        <th>CPU:</th>
+                                        <td id="devicePlatformCpu"></td>
+                                    </tr>
+                                    <tr style="background-color: transparent;">
+                                        <th>GPU:</th>
+                                        <td id="devicePlatformGpu"></td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr style="background-color: transparent;">
+                            <th>Memory:</th>
+                            <td>
+                                <table style="background-color: transparent;">
+                                    <tr style="background-color: transparent;">
+                                        <th>Card Slot:</th>
+                                        <td id="deviceMemoryCardSlot"></td>
+                                    </tr>
+                                    <tr style="background-color: transparent;">
+                                        <th>Internal:</th>
+                                        <td id="deviceMemoryInternal"></td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr style="background-color: transparent;">
+                            <th>Main Camera:</th>
+                            <td>
+                                <table style="background-color: transparent;">
+                                    <tr style="background-color: transparent;">
+                                        <th id="deviceMainCameraCount"></th>
+                                        <td id="deviceMainCameras"></td>
+                                    </tr>
+                                    <tr style="background-color: transparent;">
+                                        <th>Features:</th>
+                                        <td id="deviceMainCameraFeatures"></td>
+                                    </tr>
+                                    <tr style="background-color: transparent;">
+                                        <th>Video:</th>
+                                        <td id="deviceMainCameraVideo"></td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr style="background-color: transparent;">
+                            <th>Selfie Camera:</th>
+                            <td>
+                                <table style="background-color: transparent;">
+                                    <tr style="background-color: transparent;">
+                                        <th>Single:</th>
+                                        <td id="deviceSelfieCameraSingle"></td>
+                                    </tr>
+                                    <tr style="background-color: transparent;">
+                                        <th>Features:</th>
+                                        <td id="deviceSelfieCameraFeatures"></td>
+                                    </tr>
+                                    <tr style="background-color: transparent;">
+                                        <th>Video:</th>
+                                        <td id="deviceSelfieCameraVideo"></td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr style="background-color: transparent;">
+                            <th>Sound:</th>
+                            <td>
+                                <table style="background-color: transparent;">
+                                    <tr style="background-color: transparent;">
+                                        <th>Loudspeaker:</th>
+                                        <td id="deviceSoundLoudspeaker"></td>
+                                    </tr>
+                                    <tr style="background-color: transparent;">
+                                        <th>Headphone Jack:</th>
+                                        <td id="deviceSoundHeadphoneJack"></td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr style="background-color: transparent;">
+                            <th>Comms:</th>
+                            <td>
+                                <table style="background-color: transparent;">
+                                    <tr style="background-color: transparent;">
+                                        <th>WLAN:</th>
+                                        <td id="deviceCommsWlan"></td>
+                                    </tr>
+                                    <tr style="background-color: transparent;">
+                                        <th>Bluetooth:</th>
+                                        <td id="deviceCommsBluetooth"></td>
+                                    </tr>
+                                    <tr style="background-color: transparent;">
+                                        <th>Positioning:</th>
+                                        <td id="deviceCommsPositioning"></td>
+                                    </tr>
+                                    <tr style="background-color: transparent;">
+                                        <th>NFC:</th>
+                                        <td id="deviceCommsNfc"></td>
+                                    </tr>
+                                    <tr style="background-color: transparent;">
+                                        <th>Radio:</th>
+                                        <td id="deviceCommsRadio"></td>
+                                    </tr>
+                                    <tr style="background-color: transparent;">
+                                        <th>USB:</th>
+                                        <td id="deviceCommsUsb"></td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr style="background-color: transparent;">
+                            <th>Features:</th>
+                            <td>
+                                <table style="background-color: transparent;">
+                                    <tr style="background-color: transparent;">
+                                        <th>Sensors:</th>
+                                        <td id="deviceFeaturesSensors"></td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr style="background-color: transparent;">
+                            <th>Battery:</th>
+                            <td>
+                                <table style="background-color: transparent;">
+                                    <tr style="background-color: transparent;">
+                                        <th>Type:</th>
+                                        <td id="deviceBatteryType"></td>
+                                    </tr>
+                                    <tr style="background-color: transparent;">
+                                        <th>Charging:</th>
+                                        <td id="deviceBatteryCharging"></td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                      
+                      <script>
+                        const device = devices[document.getElementById('deviceName').innerHTML];
+
+                        const camera = setMainCameras(device.cameraType)
+
+                        function setMainCameras(cameraType){
+                            switch(cameraType){
+                                case "dual":
+                                    // return "- " + device.mainCamera.dual[1] + "<br>- " + device.mainCamera.dual[2];
+                                    return "<table style='background-color: transparent;'><tr style='background-color: transparent;'><td>" + device.mainCamera.dual[1] + "</td></tr><tr style='background-color: transparent;'><td>" + device.mainCamera.dual[2] + "</td></tr></table>";
+                                    break;
+                                case "triple":
+                                    // return "- " + device.mainCamera.triple[1] + "<br>- " + device.mainCamera.triple[2] + "<br>- " + device.mainCamera.triple[3];
+                                    return "<table style='background-color: transparent;'><tr style='background-color: transparent;'><td>" + device.mainCamera.triple[1] + "</td></tr><tr style='background-color: transparent;'><td>" + device.mainCamera.triple[2] + "</td></tr><tr style='background-color: transparent;'><td>" + device.mainCamera.triple[3] + "</td></tr></table>";
+                                    break;
+                                case "quad":
+                                    // return "- " + device.mainCamera.quad[1] + "<br>- " + device.mainCamera.quad[2] + "<br>- " + device.mainCamera.quad[3] + "<br>- " + device.mainCamera.quad[4];
+                                    return "<table style='background-color: transparent;'><tr style='background-color: transparent;'><td>" + device.mainCamera.quad[1] + "</td></tr><tr style='background-color: transparent;'><td>" + device.mainCamera.quad[2] + "</td></tr><tr style='background-color: transparent;'><td>" + device.mainCamera.quad[3] + "</td></tr><tr style='background-color: transparent;'><td>" + device.mainCamera.quad[4] + "</td></tr></table>";
+                                    break;
+                            }
+                        }
+
+                        document.getElementById('deviceNameText').innerHTML = device.name;
+                        document.getElementById('deviceMaintainer').innerHTML = device.maintainer;
+                        document.getElementById('deviceLaunch').innerHTML = device.launch;
+                        document.getElementById('deviceDisplayType').innerHTML = device.display.type;
+                        document.getElementById('deviceDisplaySize').innerHTML = device.display.size;
+                        document.getElementById('deviceDisplayResolution').innerHTML = device.display.resolution;
+                        document.getElementById('devicePlatformChipset').innerHTML = device.platform.chipset;
+                        document.getElementById('devicePlatformCpu').innerHTML = device.platform.cpu;
+                        document.getElementById('devicePlatformGpu').innerHTML = device.platform.gpu;
+                        document.getElementById('deviceMemoryCardSlot').innerHTML = device.memory.cardSlot;
+                        document.getElementById('deviceMemoryInternal').innerHTML = device.memory.internal;
+                        document.getElementById('deviceMainCameraCount').innerHTML = device.cameraType + ":";
+                        document.getElementById('deviceMainCameras').innerHTML = camera;
+                        document.getElementById('deviceMainCameraFeatures').innerHTML = device.mainCamera.features;
+                        document.getElementById('deviceMainCameraVideo').innerHTML = device.mainCamera.video;
+                        document.getElementById('deviceSelfieCameraSingle').innerHTML = device.selfieCamera.single;
+                        document.getElementById('deviceSelfieCameraFeatures').innerHTML = device.selfieCamera.features;
+                        document.getElementById('deviceSelfieCameraVideo').innerHTML = device.selfieCamera.video;
+                        document.getElementById('deviceSoundLoudspeaker').innerHTML = device.sound.loudspeaker;
+                        document.getElementById('deviceSoundHeadphoneJack').innerHTML = device.sound.headphoneJack;
+                        document.getElementById('deviceCommsWlan').innerHTML = device.comms.wlan;
+                        document.getElementById('deviceCommsBluetooth').innerHTML = device.comms.bluetooth;
+                        document.getElementById('deviceCommsPositioning').innerHTML = device.comms.positioning;
+                        document.getElementById('deviceCommsNfc').innerHTML = device.comms.nfc;
+                        document.getElementById('deviceCommsRadio').innerHTML = device.comms.radio;
+                        document.getElementById('deviceCommsUsb').innerHTML = device.comms.usb;
+                        document.getElementById('deviceFeaturesSensors').innerHTML = device.features.sensors;
+                        document.getElementById('deviceBatteryType').innerHTML = device.battery.type;
+                        document.getElementById('deviceBatteryCharging').innerHTML = device.battery.charging;
+                      </script>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Footer -->
     <footer id="footer">

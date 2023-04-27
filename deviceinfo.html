@@ -36,7 +36,7 @@
         window.deviceName = searchParams.get("name");
     </script>
     <script type="module">
-        import { Octokit } from "./assets/js/octokit.js";
+        import { Octokit } from "https://cdn.skypack.dev/octokit";
         window.releasesPromise = new Promise((onFulfilled) => {
             (async () => {
                 const octokit = new Octokit({

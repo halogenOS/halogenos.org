@@ -4250,3 +4250,8 @@ ul.actions li > * {
 		--color-body-accent: #141414;
 	}
 }
+
+
+a {
+	border-bottom: none;
+}

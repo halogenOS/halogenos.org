@@ -33,6 +33,27 @@
     <!-- ToTop -->
     <script src="assets/js/totop/main.js"></script>
     <script src="assets/js/totop/modernizr.js"></script>
+
+    <script>
+        const searchParams = new URLSearchParams(window.location.search);
+        window.deviceName = searchParams.get("name");
+    </script>
+    <script type="module">
+        import { Octokit, App } from "https://cdn.skypack.dev/octokit";
+        window.releasesPromise = new Promise((onFulfilled) => {
+            (async () => {
+                const octokit = new Octokit({
+                    userAgent: "my-app/v1.2.3",
+                });
+                const releases = await octokit.rest.repos.listReleases({
+                    owner: 'halogenOS',
+                    repo: 'builds'
+                })
+                const deviceReleases = releases.data
+                onFulfilled(deviceReleases)
+            })();
+        })
+    </script>
 </head>
 
 <body id="top">
@@ -67,8 +88,6 @@
             <h1 class="bigtitle">Device-Information</h1>
             <p class="rowitem" id="deviceName"></p>
             <script type="text/javascript">
-                const searchParams = new URLSearchParams(window.location.search);
-                const deviceName = searchParams.get("name");
                 document.getElementById('deviceName').innerHTML = deviceName;
             </script>
             <ul class="actions">
@@ -83,10 +102,17 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
-                    <img src="device-image.jpg" id="deviceImage" alt="Device Image" width="100%">
-                    <br>
-                    <br>
-                    <a href="https://download-link.com" style="color: black;" class="btn-download">Download</a>
+                    <div class="sticky-boi">
+                        <img src="device-image.jpg" id="deviceImage" alt="Device Image" width="100%">
+                        <div class="btn-download-container" style="display: none;">
+                            <a id="deviceDownloadLink" style="color: black; display: none;" class="btn-download">Download Stable</a>
+                            <a id="deviceDownloadPreReleaseLink" style="color: black; display: none;" class="btn-download">Download Pre-Release</a>
+                            <a id="deviceDownloadBootImageLink" style="color: black; display: none;" class="btn-download">Download Boot Image</a>
+                        </div>
+                        <div class="btn-download-loading">
+                            <p>Loading…</p>
+                        </div>
+                    </div>
                     <script type="text/javascript">
                         const devices = {
                             guacamole:{
@@ -95,6 +121,7 @@
                                 cameraType: "triple",
                                 image: "images/Guacamole.png",
                                 launch: "2019",
+                                isBootImageNeeded: true,
                                 display:{
                                     type: "Fluid AMOLED, 90Hz, HDR10+",
                                     size: "6.67\"",
@@ -149,6 +176,7 @@
                                 cameraType: "dual",
                                 image: "images/cheeseburger.png",
                                 launch: "2017",
+                                isBootImageNeeded: false,
                                 display:{
                                     type: "Optic AMOLED",
                                     size: "5.5\"",
@@ -202,6 +230,7 @@
                                 cameraType: "quad",
                                 image: "images/a52q.png",
                                 launch: "2021",
+                                isBootImageNeeded: false,
                                 display:{
                                     type: "Super AMOLED, 90Hz, 800 nits (HBM)",
                                     size: "6.5\"",
@@ -252,7 +281,51 @@
                                 }
                             }
                         }
-                        document.getElementById('deviceImage').src = devices[document.getElementById('deviceName').innerHTML].image
+                        document.getElementById('deviceImage').src = devices[deviceName].image
+
+                        $(document).ready(() => {
+                            window.releasesPromise.then(releases => {
+                                const deviceReleases =
+                                    releases.filter(release => release.name.endsWith(window.deviceName))
+
+                                const latestRelease = deviceReleases.find(release => !release.prerelease)
+                                const stableButton = document.getElementById("deviceDownloadLink")
+                                if (latestRelease) {
+                                    const romZipAsset = latestRelease.assets.find(a => a.name.endsWith(".zip"))
+                                    stableButton.setAttribute("href", romZipAsset.browser_download_url)
+                                    $(stableButton).show()
+                                } else {
+                                    $(stableButton).hide()
+                                }
+
+                                const latestPreRelease = deviceReleases.find(release => release.prerelease)
+                                const preReleaseButton = document.getElementById("deviceDownloadPreReleaseLink");
+                                if (latestPreRelease) {
+                                    const romZipPreReleaseAsset = latestPreRelease.assets.find(a => a.name.endsWith(".zip"))
+                                    preReleaseButton.setAttribute("href", romZipPreReleaseAsset.browser_download_url)
+                                    $(preReleaseButton).show()
+                                } else {
+                                    $(preReleaseButton).hide()
+                                }
+
+                                const bootImageButton = document.getElementById("deviceDownloadBootImageLink")
+                                if ((latestPreRelease || latestRelease) && devices[deviceName].isBootImageNeeded) {
+                                    const bootImageAsset =
+                                        (latestRelease ?? latestPreRelease).assets.find(a => a.name.endsWith("boot.img"))
+                                    if (bootImageAsset) {
+                                        bootImageButton.setAttribute("href", bootImageAsset.browser_download_url)
+                                        $(bootImageButton).show()
+                                    } else {
+                                        $(bootImageButton).hide()
+                                    }
+                                } else {
+                                    $(bootImageButton).hide()
+                                }
+
+                                $(".btn-download-loading").hide()
+                                $(".btn-download-container").show()
+                            })
+                        })
                     </script>
                 </div>
                 <div class="col-md-6" style="margin-top: 60px;">
@@ -433,7 +506,7 @@
                             </td>
                         </tr>
                     </table>
-                      
+
                       <script>
                         const device = devices[document.getElementById('deviceName').innerHTML];
 

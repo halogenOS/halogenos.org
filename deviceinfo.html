@@ -36,11 +36,11 @@
         window.deviceName = searchParams.get("name");
     </script>
     <script type="module">
-        import { Octokit, App } from "./assets/js/octokit.js";
+        import { Octokit } from "./assets/js/octokit.js";
         window.releasesPromise = new Promise((onFulfilled) => {
             (async () => {
                 const octokit = new Octokit({
-                    userAgent: "my-app/v1.2.3",
+                    userAgent: "xos-website/1.0.0",
                 });
                 const releases = await octokit.rest.repos.listReleases({
                     owner: 'halogenOS',

@@ -7,7 +7,7 @@ import DeviceInfo from './components/DeviceInfo.vue'
 </script>
 
 <template>
-  <div class="pt-29 min-h-screen w-full">
+  <div class="pt-18 min-h-screen w-full">
     <Header/>
     <RouterView />
     <Footer/>

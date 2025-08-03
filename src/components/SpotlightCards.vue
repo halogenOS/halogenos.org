@@ -1,9 +1,8 @@
 <script setup lang="ts">
-import { ref, onMounted, onUnmounted } from 'vue'
+import { ref } from 'vue'
 import SpotlightCard from './SpotlightCard.vue'
 
 const containerRef = ref<HTMLElement | null>(null)
-let spotlightInstance: Spotlight | null = null
 
 const cards = [
   {

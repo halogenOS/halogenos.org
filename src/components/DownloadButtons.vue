@@ -55,9 +55,15 @@
 import { onMounted, ref } from "vue";
 import { Octokit } from "@octokit/rest";
 
+interface Device {
+  isBootImageNeeded?: boolean;
+  isVendorBootImageNeeded?: boolean;
+  isRecoveryImageNeeded?: boolean;
+}
+
 const props = defineProps<{
   deviceName: string;
-  device: object;
+  device: Device;
 }>();
 
 const loading = ref(true);
@@ -76,7 +82,9 @@ onMounted(async () => {
     repo: "builds",
   });
 
-  const deviceReleases = releases.filter((r) => r.name.endsWith(props.deviceName));
+  const deviceReleases = releases.filter(
+    (r) => r.name?.endsWith(props.deviceName)
+  );
 
   const latestStable = deviceReleases.find((r) => !r.prerelease);
   const latestPre = deviceReleases.find((r) => r.prerelease);

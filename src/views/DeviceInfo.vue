@@ -84,7 +84,6 @@
 </template>
 
 <script setup lang="ts">
-import { defineProps } from 'vue'
 import { devices } from '../data/devices'
 import DownloadButtons from '../components/DownloadButtons.vue'
 

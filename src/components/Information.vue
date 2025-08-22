@@ -2,7 +2,7 @@
  <section id="about" class="bg-white dark:bg-gray-900 pt-33 rounded-b-lg">
     <header class="text-2xl text-gray-700 dark:text-[#999999]">
         <h2>Great performance. Great battery life. Great stability.<br>
-                All crafted into on amazing package.</h2>
+                All crafted into an amazing package.</h2>
     </header>
     <div class="flex justify-center mt-4">
         <a href="https://git.halogenos.org/halogenOS">
